@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lucas, João e Bruno">
+    <meta name="description" content="Esse é site voltado para a acessibilidade urbana">
+    <meta name="keywords" content="acessibilidade, cidade, urbano">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>GUIA</title>
+</head>
+
+<body>
+    <div class="acessibilidade">
+        <i class="fa-solid fa-plus" id="increase"></i>
+        <i class="fa-solid fa-minus" id="decrease"></i>
+        <i class="fa-solid fa-circle-half-stroke" id="toggleDarkMode"></i>
+    </div><!--acessibilidade-->
+    <header>
+        <div class="center header-center">
+            <a href="index.html">
+                <div class="logo">
+                    <span><img tabindex="0" src="img/logoguia.png" width="100px"	alt="logo do guia composto por pessoas dando-se as mãos em volta de um simbolo geográfico de localizaçao"></span>
+                </div><!--logo-->
+            </a>
+            <div class="open-close" aria-label="Toggle Menu"><i class="fa-solid fa-bars" tabindex="1"></i></div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html" tabindex="1">PÁGINA INICIAL</a></li>
+                        <li><a href="sobre.html" tabindex="2">SOBRE</a></li>
+                        <li><a href="contato.html" tabindex="3">CONTATO</a></li>
+                    </ul>
+                </nav>
+            </div><!--menu-->
+        </div><!--center-->
+    </header>
+    <main>
+
+        <section class="boas-vindas">
+            <div class="overlay">
+                <div class="center">
+                    <div tabindex="3" class="boas-vindas-conteudo">
+                        Com o GUIA, descubra destinos que se preocupam com acessibilidade para tornar os seus caminhos mais inclusivos! Viva sem barreiras!
+                    </div>
+                </div><!--center-->
+            </div><!--overlay-->
+        </section>
+
+        <section class="eventos-destaque">
+            <div class="center">
+                <h2 tabindex="4">Eventos</h2>
+                <div class="carrossel-conteudo" role="region" aria-label="Carrossel">
+
+                    <div class="carrossel-item  index-carrossel" role="option">
+                        <div class="carrossel-imagem" tabindex="6" style="background-image: url(img/caixa\ cultural\ pagina\ 2.jpg);" role="region" aria-label="haha" title="A foto mostra a Caixa Cultural é uma construção com estilo antigo, é um prédio de dois andares pintado em um tom claro de amarelo com janelas brancas em volta de toda a construção.">
+                        </div><!--carrossel-imagem-->
+
+                        <div class="carrossel-descricao">
+                            <p tabindex="7">TERÇA A SÁBADO | 10:00 - 20:00<br>DOMINGO | 10:00 - 16:00</p>
+                            <h2 tabindex="8">CAIXA CULTURAL</h2>
+                            <p tabindex="9">RECIFE - RECIFE</p>
+                            <button class="butao-carrossel">
+                                <a tabindex="10" href="item2.html" style="text-decoration: none; color: white; display: block;">SAIBA MAIS</a>
+                            </button>
+                            <div class="avaliacao">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                            </div>
+                            <!--butao-carrossel-->
+                        </div><!--carrossel-descricao-->
+                    </div><!--carrossel-item-->
+
+                    <div class="carrossel-item  index-carrossel">
+                        <div tabindex="11" class="carrossel-imagem" style="background-image: url(img/praia\ sem\ barreira\ pagina\ 5.jpg);" title="Uma imagem tirada num dia ensolarado na praia nos mostra uma criança sentada em uma cadeira adaptada para levar pessoas com deficiência para dentro da água.">
+                        </div><!--carrossel-imagem-->
+                        <div class="carrossel-descricao">
+                            <p tabindex="12">SEXTA A DOMINGO <br> 08:00 - 13:00</p>
+                            <h2 tabindex="13">PRAIA SEM BARREIRA</h2>
+                            <p tabindex="14">BOA VIAGEM - RECIFE</p>
+                            <button class="butao-carrossel">
+                                <a tabindex="15" href="item5.html" style="text-decoration: none; color: white; display: block;">SAIBA MAIS</a>
+                            </button>
+                            <div class="avaliacao">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                            </div>
+                            <!--butao-carrossel-->
+                        </div><!--carrossel-descricao-->
+                    </div><!--carrossel-item-->
+
+                    <div class="carrossel-item  index-carrossel">
+                        <div tabindex="16" class="carrossel-imagem" style="background-image: url(img/recife-e-para-sentir\ pagina\ 6.jpg);" title="A Imagem mostra uma placa escrita em braile do monumento mais conhecido como Pica de Brennand.">
+                        </div><!--carrossel-imagem-->
+                        <div class="carrossel-descricao">
+                            <p tabindex="17">SEGUNDA A DOMINGO <br> 24 HORAS POR DIA</p>
+                            <h2 tabindex="18">RECIFE É PARA SENTIR</h2>
+                            <p tabindex="19">MARCO ZERO - RECIFE</p>
+                            <button class="butao-carrossel">
+                                <a tabindex="20" href="item6.html" style="text-decoration: none; color: white; display: block;">SAIBA MAIS</a>
+                            </button>
+                            <div class="avaliacao">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                            </div><!--butao-carrossel-->
+                        </div><!--carrossel-descricao-->
+                    </div><!--carrossel-item-->
+
+                </div><!--carrossel-conteudo-->
+            </div><!--center-->
+        </section><!--evento destaque-->
+
+        <section class="passeios-tour">
+            <div class="center">
+                <h2 tabindex="21">Passeios</h2>
+                <div class="carrossel-conteudo  index-carrossel" role="region" aria-label="Carrossel">
+
+                    <div class="carrossel-item">
+                        <div tabindex="22" class="carrossel-imagem" style="background-image: url(img/museu\ do\ estado\ pagina\ 1.jpg );" role="tab" title="A imagem mostra a fachada do Museu do Estado de Pernambuco, uma construção com estilo antigo, pintada com tons de bege e branco.">
+                        </div><!--carrossel-imagem-->
+                        <div class="carrossel-descricao carrossel-item-coluna">
+                            <p tabindex="23">TERÇA A SEXTA | 09:00 - 17:00<br>SÁBADO E DOMINGO | 14:00 - 17:00</p>
+                            <h2 tabindex="24">MUSEU DO ESTADO</h2>
+                            <p tabindex="25">GRAÇAS - RECIFE</p>
+                            <button class="butao-carrossel">
+                                <a tabindex="26" href="item.html" style="text-decoration: none; color: white; display: block;">SAIBA MAIS</a>
+                            </button>
+                            <div class="avaliacao">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                            </div><!--butao-carrossel-->
+                        </div><!--carrossel-descricao-->
+                    </div><!--carrossel-item-->
+
+                    <div class="carrossel-item  index-carrossel">
+                        <div tabindex="27" class="carrossel-imagem" style="background-image: url(img/jaqueira\ pagina\ 4.jpg);" title="A imagem mostra um caminho asfaltado em meio a um espaço verde e cheio de árvores do parque da Jaqueira, onde pessoas idosas trajando roupas esportivas caminham tranquilamente.">
+                        </div><!--carrossel-imagem-->
+                        <div class="carrossel-descricao carrossel-item-coluna">
+                            <p tabindex="28">SEGUNDA A DOMINGO <br> 04:00 - 22:00</p>
+                            <h2 tabindex="29">PARQUE DA JAQUEIRA</h2>
+                            <p tabindex="30">GRAÇAS - RECIFE</p>
+                            <button class="butao-carrossel">
+                                <a tabindex="31" href="item4.html" style="text-decoration: none; color: white; display: block;">SAIBA MAIS</a>
+                            </button>
+                            <div class="avaliacao">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                            </div><!--butao-carrossel-->
+                        </div><!--carrossel-descricao-->
+                    </div><!--carrossel-item-->
+
+                    <div class="carrossel-item  index-carrossel">
+                        <div tabindex="32" class="carrossel-imagem" style="background-image: url(img/catamaran\ tours\ pagina\ 3.jpg);" title="A foto mostra um céu iluminado e ensolarado refletido no mar, onde está ancorado junto a uma ponte o barco Catamaran, uma embarcação usada para passeios turísticos. A embarcação é branca com bastante assentos cobertos para o conforto de seus passageiros. Em sua lateral há uma logo onde o C tem o formato de um Leme.">
+                        </div><!--carrossel-imagem-->
+                        <div class="carrossel-descricao">
+                            <p tabindex="33">DOMINGO A TERÇA | 08:00 - 18:00<br>QUARTA A SÁBADO | 08:00 - 21:30</p>
+                            <h2 tabindex="34">CATAMARAN TOURS</h2>
+                            <p tabindex="35">SÃO JOSÉ - RECIFE</p>
+                            <button class="butao-carrossel">
+                                <a tabindex="36" href="item3.html" style="text-decoration: none; color: white; display: block;">SAIBA MAIS</a>
+                            </button>
+                            <div class="avaliacao">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                            </div><!--butao-carrossel-->
+                        </div><!--carrossel-descricao-->
+                    </div><!--carrossel-item-->
+
+                </div><!--carrossel-conteudo-->
+            </div><!--center-->
+        </section><!--passeios tour-->
+
+        <section class="bem-avaliados">
+            <div class="center">
+                <h2 tabindex="37">Bem-avaliados</h2>
+                <div class="carrossel-conteudo" role="region" aria-label="Carrossel">
+
+                    <div class="carrossel-item  index-carrossel">
+                        <div tabindex="38" class="carrossel-imagem" style="background-image: url(img/marante-hotel\ pagina\ 9.jpg);" title="A imagem mostra a fachada do Marante Plaza Hotel, onde há um grande letreiro com letras metalizadas em frente a várias janelas que estão por toda a construção retangular. Há uma escada de mármore para subir até a portaria onde há uma iluminação esverdeada.">
+                        </div><!--carrossel-imagem-->
+                        <div class="carrossel-descricao">
+                            <p tabindex="39">SEGUNDA A DOMINGO <br> 24 HORAS POR DIA</p>
+                            <h2 tabindex="40">MARANTE PLAZA HOTEL</h2>
+                            <p tabindex="41">PINA - RECIFE</p>
+                            <button class="butao-carrossel">
+                                <a tabindex="42" href="item9.html" style="text-decoration: none; color: white; display: block;">SAIBA MAIS</a>
+                            </button>
+                            <div class="avaliacao">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                            </div><!--butao-carrossel-->
+                        </div><!--carrossel-descricao-->
+                    </div><!--carrossel-item-->
+
+                    <div class="carrossel-item  index-carrossel">
+                        <div tabindex="43" class="carrossel-imagem" style="background-image: url(img/ufpe\ pagina7.jpg);" title="Uma das entradas para a Universidade Federal de Pernambuco.">
+                        </div><!--carrossel-imagem-->
+                        <div class="carrossel-descricao carrossel-item-coluna">
+                            <p tabindex="44">SEGUNDA A SEXTA <br> 07:00 - 22:00 </p>
+                            <h2 tabindex="45">UFPE</h2>
+                            <p tabindex="46">CIDADE UNIVERSITÁRIA - RECIFE</p>
+                            <button class="butao-carrossel">
+                                <a tabindex="47" href="item7.html" style="text-decoration: none; color: white; display: block;">SAIBA MAIS</a>
+                            </button>
+                            <div class="avaliacao">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                            </div><!--butao-carrossel-->
+                        </div><!--carrossel-descricao-->
+                    </div><!--carrossel-item-->
+
+                    <div class="carrossel-item  index-carrossel">
+                        <div tabindex="48" class="carrossel-imagem" style="background-image: url(img/rio-mar\ pagina\ 8.jpg);" title="A imagem mostra a fachada do Shopping Riomar, uma construção branca em formato arredondado, com janelas azuis.">
+                        </div><!--carrossel-imagem-->
+                        <div class="carrossel-descricao">
+                            <p tabindex="49">SEGUNDA A SÁBADO | 09:00 - 22:00<br>DOMINGO | 12:00 - 21:00</p>
+                            <h2 tabindex="50">RIOMAR</h2>
+                            <p tabindex="51">PINA - RECIFE</p>
+                            <button class="butao-carrossel">
+                                <a tabindex="52" href="item8.html" style="text-decoration: none; color: white; display: block;">SAIBA MAIS</a>
+                            </button>
+                            <div class="avaliacao">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                            </div><!--butao-carrossel-->
+                        </div><!--carrossel-descricao-->
+                    </div><!--carrossel-item-->
+
+                </div><!--carrossel-conteudo-->
+            </div><!--center-->
+        </section><!--bem avaliados-->
+
+    </main>
+    <footer>
+        <div class="rodape-container">
+            <span tabindex="53">Todos os direitos reservados</span>
+            <span tabindex="54">Av. Norte Miguel Arraes de Alencar, 3003 - Rosarinho</span>
+            <span tabindex="55">Recife - PE, 52071-035</span>
+            <span tabindex="56">(81) 3348-2178</span>
+        </div>
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/functions.js"></script>
+</body>
+
+</html>

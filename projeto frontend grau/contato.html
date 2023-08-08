@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lucas, João e Bruno">
+    <meta name="description" content="Esse é site voltado para a acessibilidade urbana">
+    <meta name="keywords" content="acessibilidade, cidade, urbano">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>GUIA</title>
+</head>
+
+<body>
+    <div class="acessibilidade">
+        <i class="fa-solid fa-plus" id="increase"></i>
+        <i class="fa-solid fa-minus" id="decrease"></i>
+        <i class="fa-solid fa-circle-half-stroke" id="toggleDarkMode"></i>
+    </div><!--acessibilidade-->
+    <header>
+        <div class="center header-center">
+            <a href="index.html">
+                <div class="logo">
+                    <span><img tabindex="0" src="img/logoguia.png" width="100px"	alt="logo do guia composto por pessoas dando-se as mãos em volta de um simbolo geográfico de localizaçao"></span>
+                </div><!--logo-->
+            </a>
+            <div class="open-close"><i class="fa-solid fa-bars"></i></div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a tabindex="0" href="index.html">PÁGINA INICIAL</a></li>
+                        <li><a tabindex="0" href="sobre.html">SOBRE</a></li>
+                        <li><a tabindex="0" href="contato.html">CONTATO</a></li>
+                    </ul>
+                </nav>
+            </div><!--menu-->
+        </div><!--center-->
+    </header>
+    <main>
+
+        <section class="contato">
+            <div class="center flex-contato">
+                <div class="form-contato">
+                    <h2 tabindex="0">ENTRE EM CONTATO</h2>
+                    <form action="https://api.staticforms.xyz/submit" method="post">
+                        <input type="hidden" name="accessKey" value="3ceeb8ea-dc7d-4930-b3d2-d0aecd36fc0c">
+                        <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/enviado.html">
+                        <div class="nome">
+                            <span><label for="nome" tabindex="0">Nome completo: </label></span>
+                            <input tabindex="0" id="nome" name="name" type="text" required>
+                        </div>
+                        <div class="email">
+                            <span><label tabindex="0" for="email">E-mail: </label></span>
+                            <input tabindex="0" id="email" name="email" type="email" required>
+                        </div>
+                        <div class="mensagem">
+                            <span><label tabindex="0" for="mensagem">Mensagem: </label></span>
+                            <textarea tabindex="0" name="message" id="mensagem" required></textarea>
+                        </div>
+                        <div class="enviar">
+                            <input tabindex="0" type="submit" id="btSubmit" value="Enviar">
+                        </div>
+                    </form>
+                </div><!--forma contato-->
+                <div class="mapa-contato">
+                    <h2 tabindex="0">LOCALIZAÇÃO</h2>
+                    <iframe tabindex="0"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15801.734989633613!2d-34.8916103!3d-8.057161!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18c19ab484d9%3A0x84ccc148ae0eed47!2sGrau%20T%C3%A9cnico%20Recife%20Boa%20Vista%3A%20Administra%C3%A7%C3%A3o%2C%20Enfermagem%20e%20Radiologia!5e0!3m2!1spt-BR!2sbr!4v1689864653021!5m2!1spt-BR!2sbr"
+                        width="80%" height="80%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <div class="social-media">
+                        <a tabindex="0" href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a tabindex="0" href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a tabindex="0" href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div><!--mapa contato-->
+            </div><!--center-->
+        </section><!--contato-->
+
+
+    </main>
+    <footer>
+        <div class="rodape-container">
+            <span tabindex="0">Todos os direitos reservados</span>
+            <span tabindex="0">Av. Norte Miguel Arraes de Alencar, 3003 - Rosarinho</span>
+            <span tabindex="0">Recife - PE, 52071-035</span>
+            <span tabindex="0">(81) 3348-2178</span>
+        </div>
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/functions.js"></script>
+</body>
+
+</html>
