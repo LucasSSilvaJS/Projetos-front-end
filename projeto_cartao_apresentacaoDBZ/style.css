@@ -98,14 +98,12 @@ main p{
 
 /*ola*/
 .social-midia{
-    padding-top: 20px;
+    gap: 20px;
     text-align: center;
     display: flex;
     justify-content: center;
-    gap: 30px;
 }
 
 .social-midia a{
     display: inline-block;
 }
-
