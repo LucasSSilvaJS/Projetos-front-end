@@ -33,25 +33,25 @@ for(let i = 1; i <= 7; i++){
         let tituloReverse = titulo.reverse();
         exibir.html('<div class="bg-projeto"><div class="descricao-projeto"><p>'+ tituloReverse[i - 1] +'</p><p><a href="'+ links[i -1] +'" target="_blank">Acessar a página</a><p></div></div>');
         if(i == 7){
-            $('.bg-projeto').css('background-image', 'url("../projetoportfolio.png")');
+            $('.bg-projeto').css('background-image', 'url(projetoportfolio.png)');
         }
         if(i == 6){
-            $('.bg-projeto').css('background-image', 'url("../projetolanches.png")');
+            $('.bg-projeto').css('background-image', 'url(projetolanches.png)');
         }
         if(i == 5){
-            $('.bg-projeto').css('background-image', 'url("../projetomontagem.png")');
+            $('.bg-projeto').css('background-image', 'url(projetomontagem.png)');
         }
         if(i == 4){
-            $('.bg-projeto').css('background-image', 'url("../projetoturismo.png")');
+            $('.bg-projeto').css('background-image', 'url(projetoturismo.png)');
         }
         if(i == 3){
-            $('.bg-projeto').css('background-image', 'url("../projetocartao.png")');
+            $('.bg-projeto').css('background-image', 'url(projetocartao.png)');
         }
         if(i == 2){
-            $('.bg-projeto').css('background-image', 'url("../projetomovimentosocial.png")');
+            $('.bg-projeto').css('background-image', 'url(projetomovimentosocial.png)');
         }
         if(i == 1){
-            $('.bg-projeto').css('background-image', 'url("../projetoguia.png")');
+            $('.bg-projeto').css('background-image', 'url(projetoguia.png)');
         }
     });
 };
