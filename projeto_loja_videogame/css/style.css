@@ -1,0 +1,853 @@
+/*GERAL*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+.center{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+/*PAGINA INICIAL*/
+
+/*HEADER*/
+
+header{
+    padding: 25px 2%;
+    height: 125px;
+    background-color: rgb(36, 27, 86);
+}
+
+header .logo{
+    float: left;
+}
+
+header .logo img{
+    width: 140px;
+    height: 75px;
+}
+
+header nav.mobile{
+    display: none;
+    float: right;
+    width: 30px;
+    height: 32px;
+    background-size: 100% 100%;
+    cursor: pointer;
+    background-image: url(../imagens/menu.png);
+    margin-top: 30px;
+}
+
+header nav.mobile ul{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 90px;
+    background-color: rgb(35, 22, 212);
+    text-align: center;
+    z-index: 999 !important;
+    display: none;
+}
+
+header nav.mobile li{
+    font-size: 16px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(108, 108, 108);
+}
+
+header nav.mobile li a{
+    text-decoration: none;
+    color: white;
+}
+
+header nav.desktop{
+    float: right;
+    position: relative;
+    top: 25px;
+}
+
+header nav.desktop ul{
+    list-style-type: none;
+}
+
+header nav.desktop ul li{
+    float: left;
+    font-size: 16px;
+    padding: 0 20px;
+}
+
+header nav.desktop ul li:last-of-type{
+    padding-right: 0;
+}
+
+header nav.desktop a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+/*BANNER*/
+
+section.banner{
+    width: 100%;
+    height: calc(100vh - 125px);
+    background-image: url(../imagens/banner.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: rgb(146, 146, 225);
+}
+
+.text-banner{
+    padding: 80px;
+}
+
+.text-banner-single{
+    width: 314px;
+    height: 60px;
+    background-color: rgb(90, 90, 90);
+    border: 5px solid black;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+/*Console destaque*/
+
+section.consoles-destaque{
+    padding: 90px 2%;
+    background-color: rgb(36, 27, 86);
+    color: white;
+}
+
+section.consoles-destaque .center{
+    padding: 40px 0;
+}
+
+.line-titulo{
+    position: relative;
+    text-align: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    color: white;
+}
+
+.ln1{
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 15px;
+    background-color: white;
+}
+
+.line-titulo h2{
+    background-color: rgb(36, 27, 86);
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-size: 24px;
+    padding: 0 20px;
+}
+
+.item-destaque{
+    float: left;
+    width: calc(100% / 3);
+}
+
+.item-destaque .console-img{
+    width: 100%;
+    padding-top: 75%;
+    background-size: 100% 100%;
+    border: 8px solid rgb(36, 27, 86);
+}
+
+.item-destaque h2{
+    padding-left: 8px;
+    color: orange;
+    font-size: 20px;
+}
+
+.item-destaque p{
+    padding-top: 8px;
+    padding-left: 8px;
+    color: rgb(0, 255, 140);
+    font-size: 15px;
+}
+
+.btn1{
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    background-color: rgb(90, 90, 90);
+    text-decoration: none;
+    border-bottom: 5px solid black;
+    color: white;
+    font-size: 16px;
+    width: 150px;
+}
+
+.item-destaque a{
+    margin-left: 8px;
+    margin-top: 10px;
+}
+
+/*Section serviços descrição*/
+section.servicos-descricao{
+    display: flex;
+}
+
+.half1{
+    width: 50%;
+    padding: 90px 0;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    text-align: right;
+}
+
+.half1-wraper{
+    display: inline-block;
+    text-align: left;
+    padding-right: 30%;
+}
+
+.half1-wraper h2{
+    font-weight: normal;
+    font-size: 32px;
+}
+
+.half1-wraper ul{
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.half1-wraper li{
+    margin-left: 15px;
+}
+
+.half1-wraper a{
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 20px;
+}
+
+.half2{
+    width: 50%;
+    padding: 90px 100px;
+    background-color: rgb(90, 90, 90);
+    color: rgb(255, 255, 255);
+}
+
+.half2 h2{
+    font-weight: normal;
+    font-size: 32px; 
+}
+
+.half2 .depoimento-single{
+    margin-top: 19px;
+}
+
+.depoimento-single p{
+    font-size: 20px;
+}
+
+.navigation{
+    margin-top: 30px;
+    width: 100%;
+    max-width: 700px;
+    float: left;
+}
+
+.arrows{
+    float: left;
+}
+
+.navigation img{
+    margin: 0 20px;
+    cursor: pointer;
+    width: 40px;
+}
+
+.nome-depoimento{
+    float: right;
+    color: rgb(200, 200, 200);
+    font-size: 23px;
+}
+
+/*Contato*/
+
+section.contato{
+    background-color: rgb(36, 27, 86);
+    padding: 80px 2% 0 2%;
+}
+
+section.contato form{
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.input-wraper{
+    float: left;
+    padding: 10px;
+    margin-top: 7px;
+}
+
+section.contato .input-wraper input[type=text]{
+    width: 100%;
+    border: 4px solid orange;
+    height: 60px;
+    line-height: 40px;
+    padding-left: 15px;
+    outline: none;
+    font-size: 16px;
+}
+
+section.contato textarea{
+    width: 100%;
+    border: 4px solid orange;
+    height: 140px;
+    padding: 8px;
+    outline: none;
+    resize: none;
+    font-size: 16px;
+}
+
+section.contato form .input-wraper:nth-of-type(5){
+    text-align: center;
+}
+
+section.contato input[type=submit]{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.w100{
+    width: 100%;
+}
+
+.w50{
+    width: 50%;
+}
+
+/*Footer*/
+
+footer{
+    padding: 40px 2%;
+    background-color: black;
+}
+
+footer nav{
+    float: left;
+}
+
+footer nav ul{
+    list-style-type: none;
+}
+
+footer nav ul li{
+    float: left;
+    font-size: 15px;
+    padding: 0 30px;
+}
+
+footer nav ul a{
+    color: white;
+    text-decoration: none;    
+}
+
+footer p{
+    float: right;
+    color: white;
+    font-size: 15px;
+}
+
+/*PAGINA PARA VENDA*/
+
+/*Venda*/
+
+section.venda{
+    min-height: 90%;
+    background-color: rgb(146, 146, 225);
+    padding: 90px 0;
+}
+
+.content-venda{
+    margin-top: 40px;
+    color: white;
+}
+
+.sidebar{
+    float: left;
+    width: 30%;
+    padding-left: 2%;
+}
+
+.search1{
+    width: 90%;
+}
+
+.search1 h2{
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.search1 .barra-preco{
+    width: 100%;
+    height: 20px;
+    background-color: white;
+    margin-top: 8px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.barra-preco-fill{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(200, 200, 200));
+}
+
+.pointer-barra{
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    left: 0px;
+    top: -3px;
+    cursor: pointer;
+    border-radius: 8px;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(180, 180, 180));
+    border: 1px solid #777;
+}
+
+.valor-pesquisa{
+    margin-top: 8px;
+}
+
+.valor-pesquisa p{
+    font-size: 15px;
+}
+
+.valor-pesquisa p:nth-of-type(1){
+    float: left;
+}
+
+.valor-pesquisa p:nth-of-type(2){
+    float: right;
+}
+
+.search2{
+    margin-top: 40px;
+}
+
+.search2 h2{
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.form-venda-wraper{
+    margin-top: 10px;
+}
+
+.form-venda-wraper input[type=checkbox]{
+    display: none;
+}
+
+.form-venda-wraper label{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 4px;
+    vertical-align: top;
+    cursor: pointer;
+    position: relative;
+}
+
+.form-venda-wraper input[type=checkbox]:checked + label > .circle{
+    display: block;
+} 
+
+.circle{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    display: none;
+}
+
+.form-venda-wraper span{
+    padding: 0 10px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.vitrine-venda{
+    float: left;
+    width: 70%;
+    padding: 0 2%;
+}
+
+.vitrine-venda .item-destaque{
+    margin-top: 20px;
+}
+
+.vitrine-venda .item-destaque .console-img{
+    border-color: rgb(146, 146, 225);
+}
+
+.vitrine-venda .item-destaque .info-console h2{
+    color: rgb(120, 23, 120);
+}
+
+.vitrine-venda .item-destaque .info-console p{
+    color: rgb(255, 255, 255);
+}
+
+/*PÁGINA PRODUTO*/
+
+/*Venda single*/
+
+section.venda-single{
+    background-color: rgb(146, 146, 225);
+    color: white;
+    padding: 80px 2% 0 2%;
+}
+
+section.venda-single .center{
+    padding: 40px 0 0 0;
+    max-width: 1280px;
+    text-align: center;
+}
+
+section.venda-single .info-console{
+    display: inline-block;
+    width: 60%;
+}
+
+.foto-destaque{
+    width: 100%;
+    padding-top: 70%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section.venda-single .descricao-console{
+    display: inline-block;
+    padding: 60px 20px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.descricao-console p{
+    max-width: 200px;
+    margin-top: 25px;
+    font-size: 17px;
+}
+
+.descricao-console a{
+    margin-top: 25px;
+}
+
+.nav-galeria-parent{
+    width: 100%;
+    padding: 36px;
+    position: relative;
+}
+
+.arrow-left-nav{
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    cursor: pointer;
+    background-image: url(../imagens/seta-esquerda.png);
+    background-size: 100% 100%;
+    width: 22px;
+    height: 22px;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+
+.arrow-right-nav{
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    cursor: pointer;
+    background-image: url(../imagens/seta-direita.png);
+    background-size: 100% 100%;
+    width: 22px;
+    height: 22px;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+
+.info-bread{
+    text-align: left;
+    padding: 20px 0;
+}
+
+.info-bread a{
+    text-decoration: none;
+    color: orange;
+}
+
+.info-bread a:last-child{
+    color: rgb(0, 255, 140);
+    font-weight: bold;
+}
+
+.info-bread span{
+    padding: 0 30px;
+}
+
+.nav-galeria{
+    width: 100%;
+    overflow: hidden;
+}
+
+.mini-img-wraper{
+    float: left;
+    padding: 9px;
+}
+
+.mini-img{
+    cursor: pointer;
+    padding-top: 70%;
+    width: 100%;    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*PÁGINA SOBRE*/
+
+/*sobre*/
+
+section.sobre{
+    min-height: 90%;
+    padding: 60px 2% 20px 2%;
+    color: white;
+}
+
+section.sobre .center{
+    margin-top: 30px;
+    max-width: 840px;
+}
+
+section.sobre .img-destaque-sobre{
+    width: 100%;
+    padding-top: 60%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section.sobre .descricao-autor{
+    margin-top: 20px;
+}
+
+section.sobre .descricao-autor h2{
+    font-size: 24px;
+    color: orange;
+}
+
+section.sobre .descricao-autor p{
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 30px;
+}
+
+section.sobre .descricaoautor2{
+    margin-top: 40px;
+}
+
+.img-small{
+    width: 30%;
+    padding-top: 30%;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.descricaoautor2 p{
+    float: left;
+    width: 70%;
+    padding: 15px;
+    line-height: 30px;
+    text-align: justify;
+    font-size: 16px;
+}
+
+/*Media Query*/
+
+@media screen and (max-width: 1100px) {
+    .half1-wraper a{
+        display: block;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .half1{
+        text-align: center;
+    }
+
+    .half1-wraper{
+        padding-right: 0;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header nav.desktop{
+        display: none;
+    }
+
+    header nav.mobile{
+        display: block;
+    }
+
+    section.servicos-descricao{
+        flex-direction: column;
+    }
+
+    .half1, .half2{
+        width: 100%;
+        padding: 80px 4%;
+    }
+
+    .w50{
+        width: 100%;
+    }
+
+    footer{
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    footer nav{
+        display: none;
+    }
+
+    footer p{
+        float: none;
+    }
+
+    .sidebar{
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .search1{
+        display: inline-block;
+    }
+
+    .search2{
+        display: inline-block;
+        text-align: left;
+    }
+
+    .vitrine-venda{
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    section.venda-single .info-console{
+        width: 100%;
+    }
+
+    section.venda-single .descricao-console{
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    section.venda-single .descricao-console a{
+        display: inline-block;
+    }
+
+    section.venda-single .descricao-console p{
+        max-width: none;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .text-banner{
+        padding: 30px;
+    }
+    
+    .text-banner-single{
+        font-size: 18px;
+    }
+
+    section.consoles-destaque .center{
+        max-width: 1000px;
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .item-destaque{
+        display: inline-block;
+        float: none;
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    section.consoles-destaque .line-titulo h2{
+        font-size: 23px;
+    }
+
+    .item-destaque a{
+        display: inline-block;
+    }
+
+    section.sobre .img-small{
+        width: 100%;
+        padding-top: 100%;
+    }
+
+    section.sobre .descricaoautor2 p{
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    footer{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .item-destaque{
+        width: 100%;
+    }
+}

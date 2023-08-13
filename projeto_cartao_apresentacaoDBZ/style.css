@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+.container-wraper{
+    width: 100%;
+    height: 100%;
+    background-image: url(bg-dbz.webp);
+    background-size: cover;
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header{
+    height: 250px;
+    width: 500px;
+    background: blue;
+    padding: 20px 2%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-top: 4px solid black;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+header .center{
+    margin: 0 auto;
+    position: relative;
+}
+
+header .esfera-do-dragao img{
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+}
+
+
+header .img{
+    width: 200px;
+    height: 200px;
+    background-image: url(perfil.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    border: 5px solid yellow;
+}
+
+main{
+    padding: 20px 2%;
+    width: 500px;
+    height: calc(80% - 250px);
+    background: rgb(255, 94, 0);
+    color: white;
+    min-height: 350px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom: 4px solid black;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+}
+
+
+main h1, main p{
+    display: block;
+    margin: 20px auto;
+    max-width: 400px;
+    text-align: center;
+}
+
+main h1 span{
+    color: rgb(255, 251, 0);
+}
+
+.social-midia{
+    padding-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.social-midia a:nth-of-type(2){
+    display: none;
+}
+
+
+
+.social-midia a{
+    display: block;
+    padding: 0 20px;
+}
+
+.social-midia i{
+    padding: 0 10px;
+}
+
+
