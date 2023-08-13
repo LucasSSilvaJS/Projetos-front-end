@@ -1,0 +1,754 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body{
+    height: 100%;
+    color: white;
+}
+
+.bg{
+    background: linear-gradient(rgb(112, 11, 112), rgb(50, 18, 235));
+    min-width: 100%;
+    min-height: 250vh;
+}
+
+.center{
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 0 2%;
+}
+
+header{
+  height: 120px;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.668);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header a{
+  text-decoration: none;
+  color: white;
+}
+
+header .navegacao-rapida a:not(:last-of-type){
+  margin-right: 20px;
+  border-right: 2px solid white;
+  padding-right: 20px;
+}
+
+.navegacao-rapida-mobile{
+  display: none;
+}
+
+section.saiba-mais{
+    min-height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, h2, h3{
+    text-shadow: 2px 2px 0px black ;
+}
+
+h3{
+    margin-top: 10px;
+}
+
+button{
+    margin-top: 20px;
+}
+
+.logo{
+    text-align: center;
+}
+
+.logo img{
+    filter: drop-shadow(15px 15px 0 rgba(0, 0, 0, 0.416));
+    width: 80%;
+}
+
+.perfil{
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto
+}
+
+.perfil img{
+    width: 80%;
+    border-radius: 50%;
+    background-size: 300% 300%;
+    transition: 0.5s;
+    animation: gradient_301 5s ease infinite;
+    border: double 8px transparent;
+    background-image: linear-gradient(#212121, #212121),  linear-gradient(137.48deg, #ffdb3b 10%,#FE53BB 45%, #8F51EA 67%, #0044ff 87%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.desc{
+    display: flex;
+    justify-content: center;
+    align-items: center!important;
+}
+
+.tecnologias-each{
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.box{
+    width: 30%;
+    height: 50px;
+    line-height: 50px;
+    background: white;
+    border: 3px solid black;
+    box-shadow: 5px 5px 10px black;
+    color: rgb(126, 115, 115);
+    text-align: center;
+    transition: 0.5s all ease;
+    display: inline-block;
+  }
+
+.box:hover{
+    box-shadow: 10px 10px 0px black;
+}
+
+.projetos{
+  overflow: hidden;
+}
+
+.projetos h2{
+  margin-bottom: 70px;
+}
+
+.janela-position{
+    position: relative;
+    width: 300px;
+    height: 150px;
+    margin-left: 100px;
+}
+
+.janela{
+    width: 100%;
+    height: 100%;
+    background: rgb(208, 204, 189);
+    border: 2px solid black;
+    position: absolute;
+    box-shadow: -10px -10px 5px rgba(0, 0, 0, 0.395);
+}
+
+.j1{
+    right: 0;
+    bottom: 0;
+    animation-delay: 7s;
+}
+
+.j2{
+    right: 10px;
+    bottom: 10px;
+    animation-delay: 6s;
+}
+
+.j3{
+    right: 20px;
+    bottom: 20px;
+    animation-delay: 5s;
+}
+
+.j4{
+    right: 30px;
+    bottom: 30px;
+    animation-delay: 4s;
+}
+
+.j5{
+    right: 40px;
+    bottom: 40px;
+    animation-delay: 3s;
+}
+
+.j6{
+    right: 50px;
+    bottom: 50px;
+    animation-delay: 2s;
+}
+
+.j7{
+    right: 60px;
+    bottom: 60px;
+    animation-delay: 1s;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    background: rgb(250, 98, 121);
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 4px;
+    padding: 0 2%;
+}
+
+.janela-conteudo{
+    padding: 35px;
+    text-align: center;
+    color: black;
+}
+
+.circulo{
+    width: 12px;
+    height: 12px;
+    border: 2px solid black;
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.orangered{
+    background: rgb(204, 192, 187);
+}
+
+section.saiba-mais{
+  padding: 160px 0 80px 0;
+}
+
+section.sobre-mim, section.projetos, section.tecnologias, section.contato{
+    padding: 80px 0;
+}
+
+section.sobre-mim{
+  display: flex;
+}
+
+.contato{
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  text-align: center;
+  text-align: center;
+  max-width: 640px;
+}
+
+.contato i{
+  color: white;
+}
+
+.contato a{
+  display: inline-block;
+  flex-grow: 1;
+}
+
+.exibir-projetos{
+  text-align: left;
+  animation-delay: 8s;
+}
+
+.bg-projeto{
+  width: 450px;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  top: -100px;
+  left: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+}
+
+.bg-projeto .descricao-projeto{
+  height: 100px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.descricao-projeto p{
+  text-align: center;
+}
+
+.bg-projeto p:nth-of-type(2){
+  margin-top: 15px;
+}
+
+.bg-projeto a{
+  text-decoration: none;
+  color: white;
+  width: 150px;
+  padding: 5px 10px;
+  border: 2px solid white;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 0.8rem;
+  transition: 0.5s;
+}
+
+.bg-projeto a:hover{
+  background: rgb(255, 255, 255);
+  color: black;
+}
+
+/*slides*/
+
+.swiper {
+  width: 600px;
+  height: 400px;
+}
+
+.swiper-slide{
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.slide1{
+  background-image: url(/certificados/course-84414-cvqlm_page-0001.jpg);
+}
+
+.slide2{
+  background-image: url(/certificados/course-84414-cvqlm_page-0003.jpg);
+}
+
+.slide3{
+  background-image: url(/certificados/Coursera\ 4S38F3CXJ9GA_page-0001.jpg);
+}
+
+.slide4{
+  background-image: url(/certificados/Inglês_1-Certificado_digital_1674635_page-0001.jpg);
+}
+
+.slide5{
+  background-image: url(/certificados/Inglês_2-Certificado_digital_1688521_page-0001.jpg);
+}
+
+.slide6{
+  background-image: url(/certificados/Inglês_3-Certificado_digital_1711451_page-0001.jpg);
+}
+
+.slide7{
+  background-image: url(/certificados/Inglês_4-Certificado_digital_1801296_page-0001.jpg);
+}
+
+.slide8{
+  background-image: url(/certificados/Programador_Web-Certificado_digital_1726955_page-0001.jpg);
+}
+
+
+/*botao espacial*/
+.btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13rem;
+    overflow: hidden;
+    height: 3rem;
+    background-size: 300% 300%;
+    backdrop-filter: blur(1rem);
+    border-radius: 5rem;
+    transition: 0.5s;
+    animation: gradient_301 5s ease infinite;
+    border: double 4px transparent;
+    background-image: linear-gradient(#212121, #212121),  linear-gradient(137.48deg, #ffdb3b 10%,#FE53BB 45%, #8F51EA 67%, #0044ff 87%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+  
+  #container-stars {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+    backdrop-filter: blur(1rem);
+    border-radius: 5rem;
+  }
+  
+  strong {
+    z-index: 2;
+    font-family: 'Avalors Personal Use';
+    font-size: 12px;
+    letter-spacing: 5px;
+    color: #FFFFFF;
+    text-shadow: 0 0 4px white;
+  }
+  
+  #glow {
+    position: absolute;
+    display: flex;
+    width: 12rem;
+  }
+  
+  .circle {
+    width: 100%;
+    height: 30px;
+    filter: blur(2rem);
+    animation: pulse_3011 4s infinite;
+    z-index: -1;
+  }
+  
+  .circle:nth-of-type(1) {
+    background: rgba(254, 83, 186, 0.636);
+  }
+  
+  .circle:nth-of-type(2) {
+    background: rgba(142, 81, 234, 0.704);
+  }
+  
+  .btn:hover #container-stars {
+    z-index: 1;
+    background-color: #212121;
+  }
+  
+  .btn:hover {
+    transform: scale(1.1)
+  }
+  
+  .btn:active {
+    border: double 4px #FE53BB;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    animation: none;
+  }
+  
+  .btn:active .circle {
+    background: #FE53BB;
+  }
+  
+  #stars {
+    position: relative;
+    background: transparent;
+    width: 200rem;
+    height: 200rem;
+  }
+  
+  #stars::after {
+    content: "";
+    position: absolute;
+    top: -10rem;
+    left: -100rem;
+    width: 100%;
+    height: 100%;
+    animation: animStarRotate 90s linear infinite;
+  }
+  
+  #stars::after {
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
+  }
+  
+  #stars::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 170%;
+    height: 500%;
+    animation: animStar 60s linear infinite;
+  }
+  
+  #stars::before {
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
+    opacity: 0.5;
+  }
+  
+  @keyframes animStar {
+    from {
+      transform: translateY(0);
+    }
+  
+    to {
+      transform: translateY(-135rem);
+    }
+  }
+  
+  @keyframes animStarRotate {
+    from {
+      transform: rotate(360deg);
+    }
+  
+    to {
+      transform: rotate(0);
+    }
+  }
+  
+  @keyframes gradient_301 {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes pulse_3011 {
+    0% {
+      transform: scale(0.75);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+  
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+  
+    100% {
+      transform: scale(0.75);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+  }
+
+  /*fim botao espacial*/
+
+  /*card*/
+  /* glowing hover card made by: csozi | Website: english.csozi.hu*/
+
+  .card {
+    width: 80%;
+    height: 400px;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    border-radius: 8px;
+    color: white;
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    cursor: pointer;
+  }
+  
+  .card-content {
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    height: 100%;
+  }
+  
+  .card-content .card-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: inherit;
+    text-transform: uppercase;
+  }
+  
+  .card-content .card-para {
+    color: inherit;
+    opacity: 0.8;
+    font-size: 1.2rem;
+  }
+  
+  .card:hover {
+    transform: rotateY(10deg) rotateX(10deg) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.1));
+    transition: transform 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    z-index: 1;
+  }
+  
+  .card:hover:before {
+    transform: translateX(-100%);
+  }
+  
+  .card:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.1));
+    transition: transform 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    z-index: 1;
+  }
+  
+  .card:hover:after {
+    transform: translateX(100%);
+  }
+  
+  /*botao classico*/
+
+  .janela button{
+    cursor: pointer;
+    font-family: inherit;
+    border: none;
+    outline: 1px dotted rgb(37, 37, 37);
+    outline-offset: -4px;
+    background: hsl(0deg 0% 75%);
+    box-shadow: inset -1px -1px #292929, inset 1px 1px #fff, inset -2px -2px rgb(158, 158, 158), inset 2px 2px #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 5px 30px;
+  }
+  
+  .janela button:active {
+    box-shadow: inset -1px -1px #fff, inset 1px 1px #292929, inset -2px -2px #ffffff, inset 2px 2px rgb(158, 158, 158);
+  }
+  
+  @media screen and (max-width: 992px) {
+    h1, h2, h3{
+      text-align: center;
+    }
+
+    .btn{
+      margin: 20px auto 0 auto;
+    }
+
+    .lado-esquerdo{
+      order: 2;
+    }
+    
+    .lado-direito{
+      order: 1;
+    }
+
+    .logo img{
+      width: 40%;
+    }
+
+    .perfil img{
+      width: 40%;
+      margin-bottom: 20px;
+    }
+
+    header{
+      flex-direction: column;
+    }
+
+    .contato{
+      max-width: 240px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .janela-position{
+      margin: 0 auto;
+    }
+
+    .exibir-projetos{
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    .card{
+      height: auto;
+    }
+
+    section.sobre-mim, section.projetos, section.tecnologias, section.contato{
+      padding: 40px 0;
+    }
+
+    .bg-projeto{
+      width: 450px;
+      height: 300px;
+      position: relative;
+      top: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  
+  @media screen and (max-width: 640px){
+    .navegacao-rapida{
+      display: none;
+    }
+  
+    .navegacao-rapida-mobile{
+      display: block;
+      text-align: center;
+    }
+  
+    .navegacao-rapida-mobile a{
+      border-radius: 5px;
+      padding: 0 20px;
+      background-color: #0044ff9f;
+    }
+  
+    .navegacao-rapida-mobile span:nth-of-type(1){
+      display: inline-block;
+      margin-bottom: 5px;
+    }
+  
+    .navegacao-rapida-mobile span:nth-of-type(2){
+      display: inline-block;
+      margin-bottom: 5px;
+    }
+  }
+  
+  @media screen and (max-width: 500px){
+    .box{
+      width: 40%;
+    }
+
+    .logo img{
+      width: 80%;
+    }
+
+    .perfil img{
+      width: 80%;
+    }
+
+
+    .janela{
+      width: 80%;
+    }
+
+    .bg-projeto{
+      width: 90%;
+      height: 200px;
+    }
+    
+    .swiper{
+      width: 280px;
+      height: 280px;
+    }
+  }
